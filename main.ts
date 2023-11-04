@@ -46,11 +46,10 @@ forever(function () {
         . . . . . . . . . . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, null, 50, 50)
-    projectile.follow(mySprite, 75)
+    projectile.follow(mySprite, 68.75)
     projectile.setBounceOnWall(true)
     projectile.setPosition(randint(0, 150), randint(0, 120))
     pause(1500)
-    sprites.destroy(projectile)
 })
 forever(function () {
     music.play(music.stringPlayable("E E E F G A B C5 ", 120), music.PlaybackMode.UntilDone)
